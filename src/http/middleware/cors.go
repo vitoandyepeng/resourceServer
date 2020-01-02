@@ -41,13 +41,6 @@ func LoginRequire() gin.HandlerFunc {
 			return
 		}
 
-		//if "abcdefg" != req.Md5 {
-		//	utils.WErr("LoginRequire md5 err.", err.Error())
-		//	global.Echo(c, http.StatusUnauthorized, res)
-		//	c.Abort()
-		//	return
-		//}
-
 		m := md5.New()
 		m.Write([]byte(fmt.Sprintf("%s%d", data.Config.PrivateKey, req.Id)))
 		cipherStr := m.Sum(nil)
