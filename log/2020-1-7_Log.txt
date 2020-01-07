@@ -1,0 +1,2 @@
+01-07 11:50:48[Log]: ###版本 0.0.1
+01-07 11:50:52[Log]: receive signal interrupt string wai： interrupt

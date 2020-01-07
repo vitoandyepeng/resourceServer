@@ -1,0 +1,33 @@
+12-03 09:55:48[Err]: UploadIcon decode image err. image: unknown format
+12-03 10:15:58[Err]: UploadIcon decode image err. image: unknown format
+12-03 10:24:57[Err]: UploadIcon decode image err. invalid JPEG format: missing SOI marker
+12-03 10:29:11[Err]: UploadIcon decode image err. invalid JPEG format: missing SOI marker
+12-03 10:29:21[Err]: UploadIcon decode image err. invalid JPEG format: missing SOI marker
+12-03 10:32:03[Err]: UploadIcon open file err. open /Users/yepeng/project/resourceServer/static/icon/U_1007400.jpeg: permission denied
+12-03 10:32:09[Err]: UploadIcon open file err. open /Users/yepeng/project/resourceServer/static/icon/U_1007400.jpeg: permission denied
+12-03 10:36:13[Err]: UploadIcon decode image err. invalid JPEG format: missing SOI marker
+12-03 10:40:25[Err]: UploadIcon image size err. 1894 798 {100 700 100 700}
+12-03 10:41:28[Err]: UploadIcon image size err. 1894 798 {100 1000 100 1000}
+12-03 10:42:37[Err]: UploadIcon image size err. 1894 798 {100 1000 100 1000}
+12-03 15:03:21[Err]: UploadIcon decode image err. invalid JPEG format: missing SOI marker
+12-03 15:06:44[Err]: UploadIcon decode image err. invalid JPEG format: missing SOI marker
+12-03 15:08:02[Err]: UploadIcon decode image err. invalid JPEG format: missing SOI marker
+12-03 15:14:49[Err]: UploadIcon decode image err. png: invalid format: not a PNG file
+12-03 15:16:47[Err]: UploadIcon decode image err. invalid JPEG format: missing SOI marker
+12-03 15:18:04[Err]: UploadIcon image size err. 43 41 {100 1000 100 1000}
+12-03 15:18:08[Err]: UploadIcon decode image err. invalid JPEG format: missing SOI marker
+12-03 15:18:52[Err]: UploadIcon image size err. 43 41 {100 1000 100 1000}
+12-03 15:20:45[Err]: UploadIcon decode image err. invalid JPEG format: missing SOI marker
+12-03 15:27:22[Err]: UploadIcon decode image err. invalid JPEG format: missing SOI marker
+12-03 15:31:36[Err]: UploadIcon file decodes err. illegal base64 data at input byte 39
+12-03 15:32:36[Err]: UploadIcon file decodes err. illegal base64 data at input byte 68
+12-03 15:33:54[Err]: UploadIcon decode image err. invalid JPEG format: missing SOI marker
+12-03 15:47:22[Err]: UploadIcon decode image err. invalid JPEG format: missing SOI marker
+12-03 15:54:08[Err]: UploadIcon decode image err. invalid JPEG format: missing SOI marker
+12-03 15:55:50[Err]: UploadIcon decode image err. invalid JPEG format: missing SOI marker
+12-03 15:56:16[Err]: UploadIcon decode image err. invalid JPEG format: missing SOI marker
+12-03 15:57:26[Err]: UploadIcon decode image err. invalid JPEG format: missing SOI marker
+12-03 16:03:02[Err]: UploadIcon decode image err. png: invalid format: not a PNG file
+12-03 16:33:07[Err]: UploadIcon image size err. 750 1334 {5 1000 5 1000}
+12-03 18:09:55[Err]: UploadIcon image size err. 750 1334 {5 1000 5 1000}
+12-03 18:23:57[Err]: UploadIcon image size err. 750 1334 {5 1000 5 1000}

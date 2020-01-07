@@ -15,6 +15,7 @@ import (
 	"net/url"
 	"os"
 	"strings"
+	"time"
 )
 
 
@@ -63,7 +64,6 @@ func UploadIcon(c *gin.Context) {
 
 	iconString := l[1]
 	iconByte, err := base64.StdEncoding.DecodeString(iconString)
-	fmt.Println(hex.Dump(iconByte[1:22]))
 	if err != nil {
 		utils.WErr("UploadIcon file decodes err.", err.Error())
 		Echo(c, http.StatusBadRequest, "")
@@ -156,3 +156,37 @@ func checkSize(kind int, col, row int) bool {
 	return true
 }
 
+func Upload(c *gin.Context) {
+	_, header, err := c.Request.FormFile("file")
+	if err != nil {
+		utils.WErr("Upload get file err.", err.Error())
+		Echo(c, http.StatusBadRequest, "")
+		return
+	}
+	if 	header.Size > int64(data.Config.Size) {
+		utils.WErr("Upload file too much err.", header.Size, data.Config.Size)
+		Echo(c, http.StatusBadRequest, "")
+		return
+	}
+
+	name := fmt.Sprintf("%s/%d%s", data.Config.StaticPath, time.Now().Unix(), header.Filename)
+	err = c.SaveUploadedFile(header, name)
+	if err != nil {
+		utils.WErr("Upload save file err.", err.Error())
+		Echo(c, http.StatusBadRequest, "")
+		return
+	}
+
+	LastName, ok := c.GetPostForm("lastName")
+	if ok {
+		lastname := fmt.Sprintf("%s/%s", data.Config.StaticPath, LastName)
+		err = os.Remove(lastname)
+		if err != nil {
+			utils.WErr("Upload delete last file err.", lastname, err.Error())
+		}
+	}
+
+	Echo(c, http.StatusOK, name)
+	return
+
+}

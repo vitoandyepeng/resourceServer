@@ -1,0 +1,75 @@
+12-03 09:55:28[Log]: receive signal interrupt string wai： interrupt
+12-03 09:55:30[Log]: ###版本 0.0.1
+12-03 10:14:42[Log]: ###版本 0.0.1
+12-03 10:15:44[Log]: ###版本 0.0.1
+12-03 10:23:03[Log]: ###版本 0.0.1
+12-03 10:25:11[Log]: receive signal interrupt string wai： interrupt
+12-03 10:25:12[Log]: ###版本 0.0.1
+12-03 10:31:41[Log]: receive signal interrupt string wai： interrupt
+12-03 10:31:42[Log]: ###版本 0.0.1
+12-03 10:39:44[Log]: receive signal interrupt string wai： interrupt
+12-03 10:39:53[Log]: ###版本 0.0.1
+12-03 10:41:02[Log]: receive signal interrupt string wai： interrupt
+12-03 10:41:04[Log]: ###版本 0.0.1
+12-03 10:42:22[Log]: receive signal interrupt string wai： interrupt
+12-03 10:42:24[Log]: ###版本 0.0.1
+12-03 10:46:24[Log]: receive signal interrupt string wai： interrupt
+12-03 10:46:27[Log]: ###版本 0.0.1
+12-03 10:47:37[Log]: receive signal interrupt string wai： interrupt
+12-03 10:47:39[Log]: ###版本 0.0.1
+12-03 11:13:21[Log]: receive signal interrupt string wai： interrupt
+12-03 11:13:22[Log]: ###版本 0.0.1
+12-03 11:18:48[Log]: receive signal interrupt string wai： interrupt
+12-03 11:18:50[Log]: ###版本 0.0.1
+12-03 11:19:10[Log]: receive signal interrupt string wai： interrupt
+12-03 11:19:12[Log]: ###版本 0.0.1
+12-03 11:36:34[Log]: receive signal interrupt string wai： interrupt
+12-03 11:39:12[Log]: ###版本 0.0.1
+12-03 11:43:34[Log]: receive signal interrupt string wai： interrupt
+12-03 11:43:36[Log]: ###版本 0.0.1
+12-03 11:45:11[Log]: ###版本 0.0.1
+12-03 12:04:10[Log]: receive signal interrupt string wai： interrupt
+12-03 12:04:13[Log]: ###版本 0.0.1
+12-03 12:09:21[Log]: receive signal interrupt string wai： interrupt
+12-03 12:09:24[Log]: ###版本 0.0.1
+12-03 14:32:23[Log]: receive signal interrupt string wai： interrupt
+12-03 14:32:25[Log]: ###版本 0.0.1
+12-03 15:04:01[Log]: receive signal interrupt string wai： interrupt
+12-03 15:04:03[Log]: ###版本 0.0.1
+12-03 15:20:02[Log]: receive signal interrupt string wai： interrupt
+12-03 15:20:05[Log]: ###版本 0.0.1
+12-03 15:27:02[Log]: receive signal interrupt string wai： interrupt
+12-03 15:27:04[Log]: ###版本 0.0.1
+12-03 15:31:16[Log]: receive signal interrupt string wai： interrupt
+12-03 15:31:18[Log]: ###版本 0.0.1
+12-03 15:32:27[Log]: receive signal interrupt string wai： interrupt
+12-03 15:32:29[Log]: ###版本 0.0.1
+12-03 15:32:53[Log]: receive signal interrupt string wai： interrupt
+12-03 15:32:55[Log]: ###版本 0.0.1
+12-03 15:33:47[Log]: receive signal interrupt string wai： interrupt
+12-03 15:33:49[Log]: ###版本 0.0.1
+12-03 15:35:06[Log]: receive signal interrupt string wai： interrupt
+12-03 15:35:08[Log]: ###版本 0.0.1
+12-03 15:40:48[Log]: receive signal interrupt string wai： interrupt
+12-03 15:40:49[Log]: ###版本 0.0.1
+12-03 15:43:48[Log]: receive signal interrupt string wai： interrupt
+12-03 15:43:50[Log]: ###版本 0.0.1
+12-03 15:44:12[Log]: receive signal interrupt string wai： interrupt
+12-03 15:44:14[Log]: ###版本 0.0.1
+12-03 15:45:58[Log]: receive signal interrupt string wai： interrupt
+12-03 15:46:00[Log]: ###版本 0.0.1
+12-03 15:51:02[Log]: receive signal interrupt string wai： interrupt
+12-03 15:51:04[Log]: ###版本 0.0.1
+12-03 15:52:16[Log]: receive signal interrupt string wai： interrupt
+12-03 15:52:18[Log]: ###版本 0.0.1
+12-03 15:53:05[Log]: receive signal interrupt string wai： interrupt
+12-03 15:53:06[Log]: ###版本 0.0.1
+12-03 15:56:46[Log]: receive signal interrupt string wai： interrupt
+12-03 15:56:47[Log]: ###版本 0.0.1
+12-03 15:58:08[Log]: ###版本 0.0.1
+12-03 16:00:10[Log]: ###版本 0.0.1
+12-03 16:00:54[Log]: ###版本 0.0.1
+12-03 16:02:51[Log]: ###版本 0.0.1
+12-03 16:13:27[Log]: ###版本 0.0.1
+12-03 18:30:45[Log]: receive signal interrupt string wai： interrupt
+12-03 18:30:48[Log]: ###版本 0.0.1

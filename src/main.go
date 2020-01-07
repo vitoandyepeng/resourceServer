@@ -23,8 +23,8 @@ func adminGroup( userRouter *gin.RouterGroup) {
 	adminRouter.Use(middleware.LoginRequire())
 	{
 		adminRouter.POST("poker.gm/upload.do", handler.UploadIcon)
+		adminRouter.POST("upload", handler.Upload)
 	}
-
 }
 
 func main() {

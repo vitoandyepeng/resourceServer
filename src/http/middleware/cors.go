@@ -32,27 +32,33 @@ func LoginRequire() gin.HandlerFunc {
 
 	return func(c *gin.Context) {
 		var req data.Req
-
-		err := c.Bind(&req)
-		if err != nil {
-			utils.WErr("LoginRequire bind err.", err.Error())
-			Echo(c, http.StatusUnauthorized, "")
-			c.Abort()
-			return
+		token, ok := c.GetPostForm("md5")
+		var key string
+		if ok {
+			key = data.Config.PrivateKey
+		} else {
+			err := c.Bind(&req)
+			if err != nil {
+				utils.WErr("LoginRequire bind err.", err.Error())
+				Echo(c, http.StatusUnauthorized, "")
+				c.Abort()
+				return
+			}
+			token = req.Md5
+			key = fmt.Sprintf("%s%d", data.Config.PrivateKey, req.Id)
+			c.Set("data", req)
 		}
 
 		m := md5.New()
-		m.Write([]byte(fmt.Sprintf("%s%d", data.Config.PrivateKey, req.Id)))
+		m.Write([]byte(key))
 		cipherStr := m.Sum(nil)
 		str := hex.EncodeToString(cipherStr)
-		if str != req.Md5 {
-			utils.WErr("LoginRequire md5 err.", err.Error())
+		if str != token {
+			utils.WErr("LoginRequire md5 err.")
 			Echo(c, http.StatusUnauthorized, "")
 			c.Abort()
 			return
 		}
-
-		c.Set("data", req)
 
 		c.Next()
 	}

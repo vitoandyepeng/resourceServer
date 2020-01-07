@@ -1,0 +1,45 @@
+12-02 17:57:27[STACK]: listen tcp :7000: bind: address already in use 
+ resource server start ...
+ 
+ goroutine 7 [running]:
+runtime/debug.Stack(0xc000125f80, 0x1, 0x1)
+	/usr/local/Cellar/go/1.13.1/libexec/src/runtime/debug/stack.go:24 +0x9d
+common/utils.RecoverHandle(0xc000125f80, 0x1, 0x1)
+	/Users/yepeng/go/src/common/utils/log.go:144 +0xad
+panic(0x15f1be0, 0xc0001acd00)
+	/usr/local/Cellar/go/1.13.1/libexec/src/runtime/panic.go:679 +0x1b2
+main.startServer()
+	/Users/yepeng/project/resourceServer/src/main.go:77 +0x53d
+created by main.main
+	/Users/yepeng/project/resourceServer/src/main.go:38 +0x1cc
+
+12-02 17:58:47[STACK]: listen tcp :7000: bind: address already in use 
+ resource server start ...
+ 
+ goroutine 9 [running]:
+runtime/debug.Stack(0xc00011df80, 0x1, 0x1)
+	/usr/local/Cellar/go/1.13.1/libexec/src/runtime/debug/stack.go:24 +0x9d
+common/utils.RecoverHandle(0xc00011df80, 0x1, 0x1)
+	/Users/yepeng/go/src/common/utils/log.go:144 +0xad
+panic(0x15f1be0, 0xc0004261c0)
+	/usr/local/Cellar/go/1.13.1/libexec/src/runtime/panic.go:679 +0x1b2
+main.startServer()
+	/Users/yepeng/project/resourceServer/src/main.go:77 +0x53d
+created by main.main
+	/Users/yepeng/project/resourceServer/src/main.go:38 +0x1cc
+
+12-02 17:59:43[STACK]: listen tcp :7000: bind: address already in use 
+ resource server start ...
+ 
+ goroutine 50 [running]:
+runtime/debug.Stack(0xc000153f80, 0x1, 0x1)
+	/usr/local/Cellar/go/1.13.1/libexec/src/runtime/debug/stack.go:24 +0x9d
+common/utils.RecoverHandle(0xc000153f80, 0x1, 0x1)
+	/Users/yepeng/go/src/common/utils/log.go:144 +0xad
+panic(0x15f1be0, 0xc0004243e0)
+	/usr/local/Cellar/go/1.13.1/libexec/src/runtime/panic.go:679 +0x1b2
+main.startServer()
+	/Users/yepeng/project/resourceServer/src/main.go:77 +0x53d
+created by main.main
+	/Users/yepeng/project/resourceServer/src/main.go:38 +0x1cc
+

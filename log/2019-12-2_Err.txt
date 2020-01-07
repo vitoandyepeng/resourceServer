@@ -1,0 +1,25 @@
+12-02 17:57:27[Err]: server run err. listen tcp :7000: bind: address already in use
+12-02 17:58:47[Err]: server run err. listen tcp :7000: bind: address already in use
+12-02 17:59:43[Err]: server run err. listen tcp :7000: bind: address already in use
+12-02 18:00:43[Err]: UploadIcon type err. 0
+12-02 18:01:56[Err]: UploadIcon type err. 0
+12-02 18:02:34[Err]: UploadIcon type err. 0
+12-02 18:02:55[Err]: UploadIcon type err. 0
+12-02 18:04:48[Err]: UploadIcon type err. 0
+12-02 18:07:31[Err]: UploadIcon type err. 0
+12-02 18:25:42[Err]: UploadIcon bind err. EOF
+12-02 18:29:47[Err]: UploadIcon file err.
+12-02 18:31:12[Err]: UploadIcon file err.
+12-02 18:31:53[Err]: UploadIcon file err.
+12-02 18:31:53[Err]: UploadIcon file err.
+12-02 18:35:27[Err]: UploadIcon base64 decode err. illegal base64 data at input byte 4
+12-02 18:51:46[Err]: UploadIcon open file err. open U_1007400.jpeg: no such file or directory
+12-02 18:52:39[Err]: UploadIcon decode image err. image: unknown format
+12-02 18:54:23[Err]: UploadIcon decode image err. unexpected EOF
+12-02 19:47:18[Err]: UploadIcon decode image err. unexpected EOF
+12-02 19:53:47[Err]: UploadIcon decode image err. image: unknown format
+12-02 20:00:26[Err]: UploadIcon decode image err. image: unknown format
+12-02 20:01:14[Err]: UploadIcon decode image err. unexpected EOF
+12-02 20:08:36[Err]: UploadIcon decode image err. image: unknown format
+12-02 20:12:48[Err]: UploadIcon image size err. 533 300 {100 500 100 500}
+12-02 20:13:09[Err]: UploadIcon image size err. 533 300 {100 500 100 500}
