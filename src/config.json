@@ -1,0 +1,9 @@
+{
+    "run_mode" : "dev",
+    "port" : ":7000",
+    "private_key" : "abc",
+    "size" : 10000000,
+    "user_range": "5,1000;5,1000",
+    "club_range": "5,1000;5,1000",
+    "assign_range": "5,1000;5,1000"
+}

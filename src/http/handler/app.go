@@ -18,7 +18,6 @@ import (
 	"time"
 )
 
-
 func UploadIcon(c *gin.Context) {
 	var req data.Req
 	req = c.MustGet("data").(data.Req)
@@ -112,7 +111,7 @@ func UploadIcon(c *gin.Context) {
 		return
 	}
 
-	filepath := fmt.Sprintf("%s/static/icon/%s", data.Config.Host, name)
+	filepath := fmt.Sprintf("%s/%s", data.Config.PATH, name)
 	f, err := os.Create(filepath)
 	if err != nil {
 		utils.WErr("UploadIcon open file err.", err.Error())
@@ -169,8 +168,10 @@ func Upload(c *gin.Context) {
 		return
 	}
 
-	name := fmt.Sprintf("%s/%d%s", data.Config.StaticPath, time.Now().Unix(), header.Filename)
-	err = c.SaveUploadedFile(header, name)
+	list := strings.Split(header.Filename, ".")
+	FileName := list[len(list)-1]
+	name := fmt.Sprintf("%d.%s", time.Now().Unix(), FileName)
+	err = c.SaveUploadedFile(header, fmt.Sprintf("%s/%s", data.Config.PATH, name))
 	if err != nil {
 		utils.WErr("Upload save file err.", err.Error())
 		Echo(c, http.StatusBadRequest, "")
@@ -178,15 +179,18 @@ func Upload(c *gin.Context) {
 	}
 
 	LastName, ok := c.GetPostForm("lastName")
-	if ok {
-		lastname := fmt.Sprintf("%s/%s", data.Config.StaticPath, LastName)
+	utils.Trace("lastname", LastName)
+	if ok && LastName != ""{
+		lastname := fmt.Sprintf("%s/%s", data.Config.PATH, LastName)
 		err = os.Remove(lastname)
 		if err != nil {
 			utils.WErr("Upload delete last file err.", lastname, err.Error())
 		}
 	}
 
-	Echo(c, http.StatusOK, name)
+	res := fmt.Sprintf("%s/%s", data.Config.StaticPath, name)
+	Echo(c, http.StatusOK, res)
+	utils.Trace("res:", res)
 	return
 
 }

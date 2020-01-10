@@ -3,7 +3,6 @@ package main
 import (
 	"common/utils"
 	"data"
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/swaggo/gin-swagger"
 	"github.com/swaggo/gin-swagger/swaggerFiles"
@@ -18,7 +17,7 @@ import (
 
 func adminGroup( userRouter *gin.RouterGroup) {
 
-	userRouter.StaticFS(data.Config.StaticPath, http.Dir(fmt.Sprintf("%s/static/icon", data.Config.Host)))
+	userRouter.StaticFS(data.Config.StaticPath, http.Dir(data.Config.PATH))
 	adminRouter := userRouter.Group("")
 	adminRouter.Use(middleware.LoginRequire())
 	{

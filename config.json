@@ -1,6 +1,5 @@
 {
     "run_mode" : "dev",
-    "host" : "/Users/yepeng/project/resourceServer",
     "port" : ":7000",
     "private_key" : "abc",
     "size" : 10000000,

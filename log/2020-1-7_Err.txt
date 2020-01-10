@@ -1,0 +1,13 @@
+01-07 18:20:33[Err]: Upload save file err. open /static/icon/15783924334.png: no such file or directory
+01-07 18:21:22[Err]: Upload save file err. open /static/icon/15783924824 (1).jpg: no such file or directory
+01-07 18:23:02[Err]: Upload delete last file err. /Users/yepeng/project/resourceServer/static/icon/ remove /Users/yepeng/project/resourceServer/static/icon/: directory not empty
+01-07 18:23:55[Err]: Upload delete last file err. /Users/yepeng/project/resourceServer/static/icon/ remove /Users/yepeng/project/resourceServer/static/icon/: directory not empty
+01-07 18:25:56[Err]: Upload delete last file err. /Users/yepeng/project/resourceServer/static/icon/ remove /Users/yepeng/project/resourceServer/static/icon/: directory not empty
+01-07 18:27:31[Err]: Upload delete last file err. /Users/yepeng/project/resourceServer/static/icon/ remove /Users/yepeng/project/resourceServer/static/icon/: directory not empty
+01-07 18:30:18[Err]: Upload delete last file err. /Users/yepeng/project/resourceServer/static/icon/ remove /Users/yepeng/project/resourceServer/static/icon/: directory not empty
+01-07 18:31:34[Err]: Upload delete last file err. /Users/yepeng/project/resourceServer/static/icon/ remove /Users/yepeng/project/resourceServer/static/icon/: directory not empty
+01-07 18:31:55[Err]: Upload delete last file err. /Users/yepeng/project/resourceServer/static/icon/ remove /Users/yepeng/project/resourceServer/static/icon/: directory not empty
+01-07 18:32:31[Err]: Upload delete last file err. /Users/yepeng/project/resourceServer/static/icon/ remove /Users/yepeng/project/resourceServer/static/icon/: directory not empty
+01-07 18:33:50[Err]: Upload delete last file err. /Users/yepeng/project/resourceServer/static/icon/ remove /Users/yepeng/project/resourceServer/static/icon/: directory not empty
+01-07 18:35:02[Err]: Upload delete last file err. /Users/yepeng/project/resourceServer/static/icon/ remove /Users/yepeng/project/resourceServer/static/icon/: directory not empty
+01-07 18:36:24[Err]: Upload delete last file err. /Users/yepeng/project/resourceServer/static/icon/ remove /Users/yepeng/project/resourceServer/static/icon/: directory not empty

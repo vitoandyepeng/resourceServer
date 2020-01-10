@@ -2,7 +2,10 @@ package data
 
 import (
 	"common/utils"
+	"fmt"
 	"github.com/pkg/errors"
+	"os"
+	"path/filepath"
 	"strconv"
 	"strings"
 )
@@ -11,7 +14,6 @@ var Config *ServerConfig
 
 type ServerConfig struct {
 	RunMode     string `json:"run_mode"`
-	Host        string `json:"host"`
 	Port        string `json:"port"`
 	PrivateKey  string `json:"private_key"`
 	Size        int    `json:"size"`
@@ -22,6 +24,7 @@ type ServerConfig struct {
 	Type       map[string]bool   `json:"type"`
 	IconRange  map[int]SizeRange `json:"icon_range"`
 	StaticPath string            `json:"static_path"`
+	PATH       string            `json:"path"`
 }
 
 type SizeRange struct {
@@ -65,6 +68,28 @@ func Init() bool {
 		return false
 	}
 	Config.IconRange[ASSIGN] = assignRange
+
+	dir, err := filepath.Abs(filepath.Dir(os.Args[0]))
+	if err != nil {
+		utils.WErr("Load config get dir err.", err.Error())
+		return false
+	}
+
+	Config.PATH = fmt.Sprintf("%s/static", dir)
+	if exist, err := pathExists(Config.PATH); err != nil {
+		utils.WErr("Load config check dir err.", err.Error())
+		return false
+	} else {
+		if !exist {
+			err = os.Mkdir(Config.PATH, os.ModePerm)
+			if err != nil {
+				utils.WErr("Load config create dir err!", err.Error())
+				return false
+			}
+		}
+	}
+
+	fmt.Println(Config.PATH)
 
 	return true
 }
@@ -110,4 +135,15 @@ func getRange(str string) (item SizeRange, err error) {
 		return
 	}
 	return
+}
+
+func pathExists(path string) (bool, error) {
+	_, err := os.Stat(path)
+	if err == nil {
+		return true, nil
+	}
+	if os.IsNotExist(err) {
+		return false, nil
+	}
+	return false, err
 }

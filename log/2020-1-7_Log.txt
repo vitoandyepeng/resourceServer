@@ -1,2 +1,14 @@
 01-07 11:50:48[Log]: ###版本 0.0.1
 01-07 11:50:52[Log]: receive signal interrupt string wai： interrupt
+01-07 14:56:49[Log]: ###版本 0.0.1
+01-07 16:40:38[Log]: receive signal interrupt string wai： interrupt
+01-07 16:44:16[Log]: ###版本 0.0.1
+01-07 18:22:24[Log]: receive signal interrupt string wai： interrupt
+01-07 18:22:26[Log]: ###版本 0.0.1
+01-07 18:22:40[Log]: receive signal interrupt string wai： interrupt
+01-07 18:22:42[Log]: ###版本 0.0.1
+01-07 18:24:15[Log]: receive signal interrupt string wai： interrupt
+01-07 18:24:16[Log]: ###版本 0.0.1
+01-07 18:35:59[Log]: receive signal interrupt string wai： interrupt
+01-07 18:36:01[Log]: ###版本 0.0.1
+01-07 18:41:47[Log]: receive signal interrupt string wai： interrupt

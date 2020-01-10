@@ -1,0 +1,6 @@
+01-10 15:31:39[Err]: Load config json file err,please check ! open config.json: no such file or directory
+01-10 15:31:39[Err]: data init err !
+01-10 15:41:31[Err]: Load config json file err,please check ! open config.json: no such file or directory
+01-10 15:41:31[Err]: data init err !
+01-10 15:42:56[Err]: Load config json file err,please check ! open config.json: no such file or directory
+01-10 15:42:56[Err]: data init err !
