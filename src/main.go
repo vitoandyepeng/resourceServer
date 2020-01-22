@@ -3,6 +3,7 @@ package main
 import (
 	"common/utils"
 	"data"
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/swaggo/gin-swagger"
 	"github.com/swaggo/gin-swagger/swaggerFiles"
@@ -13,6 +14,7 @@ import (
 	"os/signal"
 	"strings"
 	"syscall"
+	"version"
 )
 
 func adminGroup( userRouter *gin.RouterGroup) {
@@ -27,6 +29,17 @@ func adminGroup( userRouter *gin.RouterGroup) {
 }
 
 func main() {
+	if len(os.Args)>1{
+		if os.Args[1]=="ver"{
+			fmt.Println("GameServer Version:",version.VERSION)
+		}else{
+			fmt.Println(`
+	gameServer ver  //output version
+`)
+		}
+		return
+	}
+
 	utils.LogFlag.Add(utils.ALL_PRINT | utils.TRACE_WRITE)
 	defer utils.RecoverHandle("resource server over ...")
 	utils.WLog("###版本 0.0.1")
